@@ -17,7 +17,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 * Uygulamanızda ```application.properties``` dosyasına ```course.name``` ve ```project.developer.fullname``` değerlerini tanımlayıp, bunları ```Value``` annotation kullanarak çağırın.
 * controller paketi altında ```AnimalController``` isimli bir sınıf oluşturunuz. Controller olarak görev yapacağından dolayı gerekli annotation ile işaretleyin.
 * Controller sınıfı içerisinde bir adet ```animals``` adında Map tanımlayın. ```Map<Integer, Animal>``` şeklinde değer almalı.
-* Animal sınıfını mutlaka ```entity``` paketi altında tanımlayınız.
+* Animal sınıfını mutlaka ```entity``` paketi altında tanımlayınız. Animal sınıfı (int id ve String type) değerleri alabilen bir contrcutor ile tanımlanabilmelidir.
 * Amacımız CRUD işlemlerini tanımlayan endpointler yazarak bir Rest Api tanımlamak.
 * [GET]/workintech/animal => tüm animal mapinin value değerlerini ```List``` olarak döner.
 * [GET]/workintech/animal/{id} => ilgili id deki animal mapte varsa value değerini döner.
